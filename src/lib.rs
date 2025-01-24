@@ -1,1 +1,2 @@
-pub use mod pb.kafka.*;
+mod pb;
+pub use pb::kafka::*;
