@@ -1,5 +1,6 @@
 use prost::Message;
 use crate::pb::kafka as pb;
+use crate::TopicBundle;
 
 impl pb::Message {
     pub fn new(key: String, value: impl Message) -> Self {

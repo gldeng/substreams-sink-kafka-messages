@@ -1,5 +1,5 @@
 mod pb;
 mod extensions;
-mod Topics;
+mod topics;
 
 pub use pb::kafka::*;
