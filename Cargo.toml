@@ -1,0 +1,13 @@
+[package]
+name = "substreams-sink-kafka-messages"
+version = "0.1.0"
+edition = "2021"
+description = "Substreams Kafka Messages"
+license = "Apache-2.0"
+keywords = [ "substreams", "streamingfast", "kafka"]
+categories = ["api-bindings", "external-ffi-bindings", "wasm"]
+
+[dependencies]
+prost = "0.13"
+prost-types = "0.13"
+substreams = "0.6"

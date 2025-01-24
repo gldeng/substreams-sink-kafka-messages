@@ -1,0 +1,12 @@
+specVersion: v0.1.0
+package:
+  name: substreams_sink_kafka_messages
+  version: v1.3.1
+  url: https://github.com/gldeng/substreams-sink-kafka-messages
+  doc: Contains all the definitions for the kafka messages which can be emitted by a Substreams.
+
+protobuf:
+  files:
+    - gldeng/substreams/sink/kafka/v1/kafka.proto
+  importPaths:
+    - ./proto

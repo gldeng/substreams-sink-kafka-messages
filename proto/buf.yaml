@@ -1,0 +1,10 @@
+version: v1
+name: buf.build/gldeng/substreams-sink-kafka-messages
+
+lint:
+  use:
+    - DEFAULT
+
+breaking:
+  use:
+    - FILE

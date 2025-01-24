@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package gldeng.substreams.sink.kafka.v1;
+
+option go_package = "github.com/gldeng/substreams-sink-kafka-messages/pb/gldeng/substreams/sink/kafka/v1;pbkafka";
+
+message Messages {
+  repeated Message messages = 1;
+}
+
+message Message {
+  string topic = 1;
+  int32 schema_id = 2;
+  bytes key = 3;
+  bytes value = 4;
+}
