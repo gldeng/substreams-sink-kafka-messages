@@ -1,7 +1,7 @@
 // @generated
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
-pub struct Batch {
+pub struct Publish {
     #[prost(message, repeated, tag="1")]
     pub topic_bundles: ::prost::alloc::vec::Vec<TopicBundle>,
 }

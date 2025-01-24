@@ -4,7 +4,7 @@ package gldeng.substreams.sink.kafka.v1;
 
 option go_package = "github.com/gldeng/substreams-sink-kafka-messages/pb/gldeng/substreams/sink/kafka/v1;pbkafka";
 
-message Batch {
+message Publish {
   repeated TopicBundle topic_bundles = 1;
 }
 
