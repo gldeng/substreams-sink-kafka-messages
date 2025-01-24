@@ -4,13 +4,17 @@ package gldeng.substreams.sink.kafka.v1;
 
 option go_package = "github.com/gldeng/substreams-sink-kafka-messages/pb/gldeng/substreams/sink/kafka/v1;pbkafka";
 
-message Messages {
-  repeated Message messages = 1;
+message Batch {
+  repeated TopicBundle topic_bundles = 1;
+}
+
+message TopicBundle {
+    string topic = 1;
+    int32 schema_id = 2;
+    repeated Message messages = 3;
 }
 
 message Message {
-  string topic = 1;
-  int32 schema_id = 2;
-  bytes key = 3;
-  bytes value = 4;
+  bytes key = 1;
+  bytes value = 2;
 }
