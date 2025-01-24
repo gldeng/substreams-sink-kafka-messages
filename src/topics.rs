@@ -19,8 +19,10 @@ impl Topics {
     }
 
     pub fn to_publish(self) -> Publish {
-        Publish {
-            topic_bundles: self.topics.values().collect(),
+        let mut publish = Publish::new();
+        for (_, topic) in self.topics {
+            publish.topic_bundles.push(topic);
         }
+        publish
     }
 }

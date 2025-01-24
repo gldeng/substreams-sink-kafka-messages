@@ -19,7 +19,7 @@ impl pb::TopicBundle {
             messages,
         }
     }
-    pub fn add(&mut self, key: &str, value: impl Message) -> &mut self {
+    pub fn add(&mut self, key: &str, value: impl Message) -> &mut Self {
         self.messages.push(pb::Message::new(key.to_string(), value));
         self
     }
@@ -30,7 +30,7 @@ impl pb::Publish {
         pb::Publish::default()
     }
 
-    pub fn add(&mut self, topic: &str, schema_id: i32, messages: Vec<pb::Message>) -> &mut self {
+    pub fn add(&mut self, topic: &str, schema_id: i32, messages: Vec<pb::Message>) -> &mut Self {
         self.topic_bundles.push(pb::TopicBundle::new(topic, schema_id, messages));
         self
     }
